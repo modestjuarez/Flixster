@@ -32,21 +32,19 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
            } else if let data = data {
               let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
             
+            // TODO: Get the array of movies
+            // TODO: Store the movies in a property to use elsewhere
             self.movies = dataDictionary["results"] as! [[String:Any]]
             
+            // TODO: Reload your table view data
             self.tableView.reloadData()
-              // TODO: Get the array of movies
-              // TODO: Store the movies in a property to use elsewhere
-              // TODO: Reload your table view data
             
-            print(dataDictionary)
-
            }
         }
         task.resume()
-        // Do any additional setup after loading the view.
     }
     
+    // Do any additional setup after loading the view.
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        return movies.count
     }
@@ -66,8 +64,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         let posterUrl = URL(string: baseUrl + posterPath)
         
         cell.posterView.af_setImage(withURL: posterUrl!)
-        
-        
         
         return cell
     }
