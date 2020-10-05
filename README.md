@@ -14,7 +14,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 <img src="part2.gif" width=250><br>
 
 ### Notes
-Describe any challenges encountered while building the app.
+This part started out easy but it became harder when I entered a new navigation controller and had to figure out how to connect it to my view controller for the Superhero tab. I later ran into a problem with the image view not recognizing that it was a Superhero object which was causing the app to crash once I ran the simulator and clicked on the Superhero tab. I had to deleter the controller and its navigation controller and redo the Superhero view controller. Finally, I ran into an issue where on the Superhero tab, the images appeared tiny. The problem turned out to be an automatic resizing issue that was troubleshooted pretty fast. This week's to-do items were pretty tough because of all the issues that arose but I'm glad that I'm becoming more familiar with how to navigate troubleshooting Xcode.
 
 ---
 
